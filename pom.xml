@@ -17,11 +17,18 @@
     </properties>
 
     <dependencies>
-        <!-- 只需要 MySQL 驱动这一个依赖 -->
+        <!-- MySQL 驱动 -->
         <dependency>
             <groupId>com.mysql</groupId>
             <artifactId>mysql-connector-j</artifactId>
             <version>8.0.33</version>
+        </dependency>
+
+        <!-- 界面外观库：现代扁平风格（纯 Java，仅用于美化 Swing） -->
+        <dependency>
+            <groupId>com.formdev</groupId>
+            <artifactId>flatlaf</artifactId>
+            <version>3.8</version>
         </dependency>
     </dependencies>
 
@@ -33,7 +40,7 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>3.1.0</version>
                 <configuration>
-                    <mainClass>com.example.courier.Main</mainClass>
+                    <mainClass>com.example.courier.MainFrame</mainClass>
                 </configuration>
             </plugin>
         </plugins>

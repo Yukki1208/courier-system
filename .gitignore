@@ -4,6 +4,9 @@ out8/
 target/
 *.class
 
+# 驱动 jar（自行下载或由 Maven 管理，不提交）
+lib/*.jar
+
 # IDEA / 编辑器
 .idea/
 *.iml
